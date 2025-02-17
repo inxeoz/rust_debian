@@ -1,0 +1,19 @@
+[package]
+name = "rust_practice"
+version = "0.1.0"
+edition = "2021"
+authors = ["purushottam <your.email@example.com>"]  # Add this line
+license = "MIT"  # Specify a valid license
+
+[dependencies]
+libc = "0.2.169"
+
+[package.metadata.deb]
+name = "rust_practice"
+maintainer = "purushottam"
+#license-file = "copyright"  # Corrected this line
+assets = [
+    ["target/release/rust_practice", "/usr/local/bin/rust_practice", "755"],
+    ["src/icon.png", "usr/share/icons/hicolor/128x128/apps/rust_practice.png", "644"],
+    ["src/rust_practice.desktop", "usr/share/applications/rust_practice.desktop", "644"]
+]
