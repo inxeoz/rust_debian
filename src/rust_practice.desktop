@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Rust_Practice
+Exec=/usr/local/bin/rust_practice
+Icon=/usr/share/icons/hicolor/128x128/apps/rust_practice.png
+Type=Application
+Categories=Utility;
+Terminal=true
